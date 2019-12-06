@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<package>
+  <metadata>
+    <id>EntityScaffolding</id>
+    <version>3.0.1.0</version>
+    <title>Entity Scaffolding</title>
+    <authors>Brian Bu</authors>
+    <owners>Brian Bu</owners>
+    <license type="expression">Apache-2.0</license>
+    <projectUrl>https://github.com/BrianBu01/EntityScaffolding</projectUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>Convention base Entity Framework Core Scaffolding</description>
+    <releaseNotes>Works with EFCore 3.0.1</releaseNotes>
+    <copyright>Copyright 2019</copyright>
+    <tags>EFCore EntityFramework Scaffolding Conventions</tags>
+    <dependencies>
+      <group targetFramework=".netcoreapp3.0">
+        <dependency id="Microsoft.EntityFrameworkCore" version="3.0.1" />
+        <dependency id="Microsoft.EntityFrameworkCore.Design" version="3.0.1" />
+        <dependency id="Microsoft.EntityFrameworkCore.Tools" version="3.0.1" />
+      </group>
+    </dependencies>
+    <summary>Convention base Entity Framework Core Scaffolding</summary>
+    <repository type="git" url="https://github.com/BrianBu01/EntityScaffolding" />
+  </metadata>
+  <files>
+    <file src="EntityScaffolding\bin\Release\netcoreapp3.0\EntityScaffolding.dll" target="lib\netcoreapp3.0" />
+    <file src="EntityScaffolding\bin\Release\netcoreapp3.0\EntityScaffolding.pdb" target="lib\netcoreapp3.0" />
+  </files>
+</package>

@@ -19,7 +19,7 @@ namespace EntityScaffolding.DefaultConventions.Matchers
             {5, typeof(IIdentity<,,,,>) },
         };
         
-        public IEnumerable<InterfaceElement> GetMatchingElements(IEntityType entityType)
+        public IEnumerable<InterfaceElement> GetMatchingElements(IEntityType entityType, string @namespace)
         {
             var key = entityType.FindPrimaryKey();
 

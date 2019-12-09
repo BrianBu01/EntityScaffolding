@@ -11,10 +11,10 @@ namespace EntityScaffolding
     internal static class ConventionFinder
     {
         public static IEnumerable<IWritableElement> FindApplicableConventions<TWritableElement>(this IEnumerable<IConventionMatcher<TWritableElement>> conventions,
-            IEntityType entityType) where TWritableElement : IWritableElement
+            IEntityType entityType, string @namespace) where TWritableElement : IWritableElement
         {
             return conventions.SelectMany(entityConvention => 
-                entityConvention.GetMatchingElements(entityType)).
+                entityConvention.GetMatchingElements(entityType, @namespace)).
                 Cast<IWritableElement>();
         }
 

@@ -17,7 +17,7 @@ namespace EntityScaffolding.Tests.Mocking
             set => AsyncLocalAppliesToEntityFunction.Value = value;
         }
 
-        public IEnumerable<PropertyAttributeElement> GetMatchingElements(IEntityType entityType)
+        public IEnumerable<PropertyAttributeElement> GetMatchingElements(IEntityType entityType, string @namespace)
         {
             PropertyAttributeElement result;
             if (AppliesToEntityFunction == null || (result = AppliesToEntityFunction(entityType)) == null)

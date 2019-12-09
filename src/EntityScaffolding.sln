@@ -17,8 +17,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntityScaffolding.DefaultCo
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0C52683F-1AC5-476E-AB92-B060CB7063C1}"
 	ProjectSection(SolutionItems) = preProject
-		EntityScaffolding.DefaultConventions.nuspec = EntityScaffolding.DefaultConventions.nuspec
-		EntityScaffolding.nuspec = EntityScaffolding.nuspec
+		EntityScaffolding.3.0.1.nuspec = EntityScaffolding.3.0.1.nuspec
+		EntityScaffolding.DefaultConventions.3.0.1.nuspec = EntityScaffolding.DefaultConventions.3.0.1.nuspec
 	EndProjectSection
 EndProject
 Global

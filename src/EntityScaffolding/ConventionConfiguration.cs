@@ -79,7 +79,7 @@ namespace EntityScaffolding
                 _convention = convention;
             }
             
-            public IEnumerable<InterfaceElement> GetMatchingElements(IEntityType entityType)
+            public IEnumerable<InterfaceElement> GetMatchingElements(IEntityType entityType, string @namespace)
             {
                 if (_convention.GetProperties().All(p => entityType.GetProperties().Any(x =>
                     x.Name == p.Name &&

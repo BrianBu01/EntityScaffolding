@@ -20,7 +20,7 @@ namespace EntityScaffolding
         {
             var entitySource = base.WriteCode(entityType, @namespace, useDataAnnotations);
 
-            var allElements = _configuration.ConventionMatchers.FindApplicableConventions(entityType).ToList();
+            var allElements = _configuration.ConventionMatchers.FindApplicableConventions(entityType, @namespace).ToList();
 
             return _configuration.EntityEditors.EditEntity(allElements, entityType, entitySource);
         }

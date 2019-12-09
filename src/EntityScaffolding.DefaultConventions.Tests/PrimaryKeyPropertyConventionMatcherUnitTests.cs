@@ -23,7 +23,7 @@ namespace EntityScaffolding.DefaultConventions.Tests
             entity.Setup(x => x.FindPrimaryKey()).Returns(key.Object);
 
 
-            var results = matcher.GetMatchingElements(entity.Object).ToList();
+            var results = matcher.GetMatchingElements(entity.Object, string.Empty).ToList();
 
             Assert.Single(results);
             var first = results[0];
@@ -46,7 +46,7 @@ namespace EntityScaffolding.DefaultConventions.Tests
             entity.Setup(x => x.FindPrimaryKey()).Returns(key.Object);
 
 
-            var results = matcher.GetMatchingElements(entity.Object).ToList();
+            var results = matcher.GetMatchingElements(entity.Object, string.Empty).ToList();
 
             Assert.Equal(2, results.Count);
 

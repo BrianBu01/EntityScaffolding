@@ -22,7 +22,7 @@ namespace EntityScaffolding.Tests
 
             var configuration = new ConventionConfiguration();
 
-            var elements = configuration.ConventionMatchers.FindApplicableConventions(entityMock.Object).ToList();
+            var elements = configuration.ConventionMatchers.FindApplicableConventions(entityMock.Object, string.Empty).ToList();
 
             Assert.Single(elements);
 
@@ -39,7 +39,7 @@ namespace EntityScaffolding.Tests
 
             var configuration = new ConventionConfiguration();
 
-            var elements = configuration.ConventionMatchers.FindApplicableConventions(entityMock.Object).ToList();
+            var elements = configuration.ConventionMatchers.FindApplicableConventions(entityMock.Object, string.Empty).ToList();
 
             Assert.Single(elements);
 

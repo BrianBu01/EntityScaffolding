@@ -8,8 +8,10 @@ namespace EntityScaffolding.DefaultConventions.Matchers
 {
     public class PrimaryKeyPropertyConventionMatcher : IPropertyAttributeConventionMatcher
     {
-        public IEnumerable<PropertyAttributeElement> GetMatchingElements(IEntityType entityType)
+        public IEnumerable<PropertyAttributeElement> GetMatchingElements(IEntityType entityType, string @namespace)
         {
+            KeyLocationChangedWarning.DetectKeyLocationChanges(entityType, @namespace);
+
             var key = entityType.FindPrimaryKey();
             if (key != null && key.Properties.Any())
             {

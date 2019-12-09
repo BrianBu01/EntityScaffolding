@@ -24,7 +24,7 @@ namespace EntityScaffolding.DefaultConventions.Tests
             entity.Setup(x => x.FindPrimaryKey()).Returns(key.Object);
 
 
-            var results = matcher.GetMatchingElements(entity.Object).ToList();
+            var results = matcher.GetMatchingElements(entity.Object, string.Empty).ToList();
 
             Assert.Single(results);
             Assert.Equal(typeof(IIdentity<int?>), results.Single().InterfaceType);
@@ -46,7 +46,7 @@ namespace EntityScaffolding.DefaultConventions.Tests
             entity.Setup(x => x.FindPrimaryKey()).Returns(key.Object);
 
 
-            var results = matcher.GetMatchingElements(entity.Object).ToList();
+            var results = matcher.GetMatchingElements(entity.Object, string.Empty).ToList();
 
             Assert.Single(results);
             Assert.Equal(typeof(IIdentity<int?, string>), results.Single().InterfaceType);
@@ -65,7 +65,7 @@ namespace EntityScaffolding.DefaultConventions.Tests
             entity.Setup(x => x.FindPrimaryKey()).Returns(key.Object);
 
 
-            var results = matcher.GetMatchingElements(entity.Object).ToList();
+            var results = matcher.GetMatchingElements(entity.Object, string.Empty).ToList();
 
             Assert.Empty(results);
         }

@@ -165,7 +165,8 @@ Once you have your custom Editor, you can extend the ConventionConfiguration cla
 
 The EFCore "INTERNALS" will most likely not be resolved by default, even though you have added the proper package.
 
-The only solution I have currently figured out is to manually add the `Microsoft.EntityFrameworkCore.Design.dll` as a reference.
-
-The location for this assembly will most likely be C:\Users\[UserName]\.nuget\packages\microsoft.entityframeworkcore.design\[version]\lib
+There are two solutions to this problem:
+1. Update the project file to exclude the additional elements under the package reference.  It should read
+	<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="x" />
+2. The location for this assembly will most likely be C:\Users\[UserName]\.nuget\packages\microsoft.entityframeworkcore.design\[version]\lib
 

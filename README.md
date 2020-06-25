@@ -167,6 +167,6 @@ The EFCore "INTERNALS" will most likely not be resolved by default, even though 
 
 There are two solutions to this problem:
 1. Update the project file to exclude the additional elements under the package reference.  It should read
-	<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="x" />
+	```<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="x" />```
 2. The location for this assembly will most likely be C:\Users\[UserName]\.nuget\packages\microsoft.entityframeworkcore.design\[version]\lib
 
